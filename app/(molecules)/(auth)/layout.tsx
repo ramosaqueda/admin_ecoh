@@ -1,31 +1,24 @@
 import type { Metadata } from 'next'
 import { ClerkProvider } from '@clerk/nextjs'
-import LeftSideBar from '@/components/layout/LeftSideBar'
-import TopBar from '@/components/layout/TopBar'
 import { Inter } from 'next/font/google'
 import '@/app/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Ecommmerce - Admin Dashboard',
-  description: 'Admin dashboard to manage ecommerce data',
+  title: 'Ecommmerce - Admin Auth',
+  description: 'Auth to access dashboard to admin',
 }
 
-// faltan agregarle los diseños
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
-          <LeftSideBar />
-          <TopBar />
-          <div>{children}</div>
-        </body>
+        <body className={inter.className}>{children}</body>
       </html>
     </ClerkProvider>
   )
