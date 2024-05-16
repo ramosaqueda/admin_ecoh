@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   description: 'Admin dashboard to manage ecommerce data',
 }
 
-// faltan agregarle los diseños
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,9 +21,11 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          <LeftSideBar />
-          <TopBar />
-          <div>{children}</div>
+          <div className="flex max-lg:flex-col text-grey-1">
+            <LeftSideBar />
+            <TopBar />
+            <div className="flex-1">{children}</div>
+          </div>
         </body>
       </html>
     </ClerkProvider>

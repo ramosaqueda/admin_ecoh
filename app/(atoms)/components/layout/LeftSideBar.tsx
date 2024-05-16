@@ -25,8 +25,8 @@ const LeftSideBar = () => {
         ))}
       </div>
 
-      <div className='flex gap-4 text-body-medium items-center'>
-        <UserButton afterSignOutUrl='/' />
+      <div className="flex gap-4 text-body-medium items-center">
+        <UserButton afterSignOutUrl="/" />
         <p>Edit Profile</p>
       </div>
     </div>

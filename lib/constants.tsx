@@ -30,6 +30,6 @@ export const navLinks = [
   {
     url: '/customers',
     icon: <UsersRound />,
-    label: 'Dashboard',
+    label: 'Customers',
   },
 ]
