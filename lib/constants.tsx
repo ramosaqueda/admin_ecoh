@@ -4,6 +4,10 @@ import {
   ShoppingBag,
   Tag,
   UsersRound,
+  BookCheck,
+  Fingerprint,
+  ScanFace
+  
 } from 'lucide-react'
 
 export const navLinks = [
@@ -15,21 +19,26 @@ export const navLinks = [
   {
     url: '/collections',
     icon: <Shapes />,
-    label: 'Collections',
+    label: 'Artefactos',
+  },
+  {
+    url: '/rekognition',
+    icon: <ScanFace />,
+    label: 'Reconocimiento Facial',
   },
   {
     url: '/products',
-    icon: <Tag />,
-    label: 'Products',
+    icon: <BookCheck  />,
+    label: 'Ingresos',
   },
   {
     url: '/orders',
-    icon: <ShoppingBag />,
-    label: 'Orders',
+    icon: <Fingerprint />,
+    label: 'Imputados',
   },
   {
     url: '/customers',
     icon: <UsersRound />,
-    label: 'Customers',
+    label: 'Usuarios',
   },
 ]

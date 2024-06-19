@@ -79,8 +79,10 @@ const config: Config = {
         "grey-2": "#E5E7EB",
         "blue-1": "#005EBE",
         "blue-2": "#E9F5FE",
+       
         "blue-3": "#F5F7F9",
         "red-1": "#FF0000",
+
       },
     },
   },

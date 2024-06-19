@@ -1,4 +1,4 @@
-import { CircleDollarSign, ShoppingBag, UserRound } from 'lucide-react'
+import { CircleDollarSign, ShoppingBag, UserRound, Siren} from 'lucide-react'
 import { Separator } from '@/components/ui/Separator'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/(particules)/Card'
 import SalesChart from '@/components/ui/SalesChart'
@@ -12,38 +12,38 @@ export default function Home() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
         <Card>
           <CardHeader className="flex flex-row justify-between items-center">
-            <CardTitle>Total Revenue</CardTitle>
-            <CircleDollarSign className="max-sm:hidden" />
+            <CardTitle>Total de Causas Ingresadas</CardTitle>
+            <Siren className="max-sm:hidden" />
           </CardHeader>
           <CardContent>
-            <p className="text-body-bold">$ {12}</p>
+            <p className="text-body-bold"> {40}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="flex flex-row justify-between items-center">
-            <CardTitle>Total Orders</CardTitle>
+            <CardTitle>Total Causas Legadas</CardTitle>
             <ShoppingBag className="max-sm:hidden" />
           </CardHeader>
           <CardContent>
-            <p className="text-body-bold">{12}</p>
+            <p className="text-body-bold">{7}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="flex flex-row justify-between items-center">
-            <CardTitle>Total Customers</CardTitle>
+            <CardTitle>Sujetos Con Medidas Cautelares</CardTitle>
             <UserRound className="max-sm:hidden" />
           </CardHeader>
           <CardContent>
-            <p className="text-body-bold">{12}</p>
+            <p className="text-body-bold">{6}</p>
           </CardContent>
         </Card>
       </div>
 
       <Card className='mt-10'>
         <CardHeader>
-          <CardTitle>Sales Chart ($)</CardTitle>
+          <CardTitle>Ingresos Mensuales</CardTitle>
         </CardHeader>
         <CardContent>
           <SalesChart />
